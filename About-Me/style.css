@@ -1,101 +1,136 @@
-/* Reset and base styles */
+/* ============================= */
+/*  Reset and Base Styles      */
+/* ============================= */
+
+/* Remove default margin/padding and set box-sizing for consistent layout */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Set base font, background color, and text color for the page */
 body {
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f6f8;
-  color: #333;
-  padding: 20px;
+  font-family: 'Segoe UI', Roboto, sans-serif; /* Clean, modern font stack */
+  line-height: 1.6; /* Improves readability */
+  background-color: #f4f6f8; /* Light neutral background */
+  color: #333; /* Dark gray text for contrast */
+  padding: 20px; /* Adds spacing around the page */
 }
 
-/* Header */
+/* ============================= */
+/*  Header Styles              */
+/* ============================= */
+
+/* Style the header with gradient background and centered text */
 header {
   text-align: center;
   padding: 40px 20px;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
+  background: linear-gradient(to right, #4facfe, #00f2fe); /* Eye-catching gradient */
   color: white;
-  border-radius: 10px;
+  border-radius: 10px; /* Rounded corners */
   margin-bottom: 30px;
 }
 
+/* Main heading size */
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
+/* Subtitle styling */
 header p {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 300; /* Light font weight for elegance */
 }
 
-/* Navigation */
+/* ============================= */
+/*  Navigation Styles          */
+/* ============================= */
+
+/* Horizontal navigation layout */
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 30px; /* Space between links */
   list-style: none;
   margin-bottom: 40px;
 }
 
+/* Link styling */
 nav a {
   text-decoration: none;
-  color: #0077b6;
+  color: #0077b6; /* Blue tone for links */
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; /* Smooth hover effect */
 }
 
+/* Hover effect for links */
 nav a:hover {
-  color: #023e8a;
+  color: #023e8a; /* Darker blue on hover */
 }
 
-/* Sections */
+/* ============================= */
+/*  Section Styles             */
+/* ============================= */
+
+/* General section container */
 section {
   background-color: white;
   padding: 25px;
   margin-bottom: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Soft shadow for depth */
 }
 
+/* Section headings */
 section h2 {
   color: #0077b6;
   margin-bottom: 15px;
   font-size: 1.5rem;
 }
 
+/* List styling inside sections */
 section ul {
   list-style: disc inside;
   padding-left: 10px;
 }
 
+/* Paragraphs and list items */
 section p, section li {
   font-size: 1rem;
   margin-bottom: 10px;
 }
 
-/* Contact */
+/* ============================= */
+/*  Contact Section            */
+/* ============================= */
+
+/* Link styling inside address block */
 address a {
   color: #0077b6;
   text-decoration: none;
 }
 
+/* Hover effect for contact links */
 address a:hover {
   text-decoration: underline;
 }
 
+/* ============================= */
+/*  Certifications Layout      */
+/* ============================= */
+
+/* Flex layout for certification cards */
 .certification-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 20px; /* Space between items */
 }
 
+/* Individual certification card */
 .cert-item {
-  flex: 1 1 250px;
+  flex: 1 1 250px; /* Responsive width */
   border: 1px solid #ccc;
   padding: 15px;
   text-align: center;
@@ -103,14 +138,14 @@ address a:hover {
   border-radius: 8px;
 }
 
+/* ============================= */
+/*  Footer Styles              */
+/* ============================= */
 
-/* Footer */
+/* Centered footer text */
 footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  color: #666;
+  color: #666; /* Muted gray for footer */
 }
-
-
-
